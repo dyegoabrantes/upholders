@@ -25,7 +25,7 @@ header{
         background-color: #8ede50;
         color: whitesmoke;
         padding: 15px;
-        border-radius: 50px;
+        border-radius: 8px;
         width: 100px;
         text-align: center;
         box-sizing: border-box;
@@ -40,7 +40,7 @@ header{
             width: 350px;
             text-align: left;
             padding-left:10px;
-            border-radius: 50px 50px 50px 50px;
+            border-radius: 8px 8px 8px 8px;
             background-color: #c9c9c9;
             height: 50px;
             border: none;
@@ -56,7 +56,7 @@ header{
             width: 100px;
             background-color: #c9c9c9;
             height: 50px;
-            border-radius: 50px 50px 50px 50px;
+            border-radius: 8px 8px 8px 8px;
         }
     #botao_login{
         cursor: pointer;
@@ -67,7 +67,7 @@ header{
         background-color: #f5ba00;
         color: whitesmoke;
         padding: 15px;
-        border-radius: 50px;
+        border-radius: 8px;
         width: 150px;
         text-align: center;
         box-sizing: border-box;
@@ -81,7 +81,7 @@ header{
     background-color: #ed2687;
     color: whitesmoke;
     padding: 15px;
-    border-radius: 50px;
+    border-radius: 8px;
     width: 120px;
     text-align: center;
     box-sizing: border-box;
@@ -182,7 +182,7 @@ header{
         color: darkslategrey;
         font-weight: bold;
         padding: 15px;
-        border-radius: 50px;
+        border-radius: 8px;
         width: 120px;    }
     #botao_doar{
         font-weight: bold;
@@ -193,7 +193,7 @@ header{
         background-color: #ed2687;
         color: whitesmoke;
         padding: 15px;
-        border-radius: 50px;
+        border-radius: 8px;
         width: 120px;
     }
     .contacticon{
@@ -201,7 +201,7 @@ header{
         margin-top: 10px;
         display: block;
         padding: 10px;
-        border-radius: 50px;
+        border-radius: 8px;
     }
         .contacticon>span{
             padding: 5px;
