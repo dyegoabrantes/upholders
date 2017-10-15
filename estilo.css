@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+
+}
+    #barra_cima{
+        height: 80px;
+        padding: 10px;
+        position: relative;
+        text-align: justify;
+    }
+        #marca{
+            cursor: pointer;
+            display: inline-block;
+        }
+    #botao_explore{
+        cursor: pointer;
+        margin-left: 8%;
+        margin-top: 10px;
+        position: absolute;
+        display: inline-block;
+        background-color: #8ede50;
+        color: whitesmoke;
+        padding: 15px;
+        border-radius: 50px;
+        width: 100px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    #modal1{
+        position: absolute;
+        display: inline-block;
+        margin-left: 23%;
+    }
+        #input1{
+            outline: none;
+            width: 350px;
+            text-align: left;
+            padding-left:10px;
+            border-radius: 50px 50px 50px 50px;
+            background-color: #c9c9c9;
+            height: 50px;
+            border: none;
+            margin-top: 10px;
+        }
+        #input2{
+            cursor: pointer;
+            margin-top: 10px;
+            position: absolute;
+            top: 0;
+            right:0;
+            border: none;
+            width: 100px;
+            background-color: #c9c9c9;
+            height: 50px;
+            border-radius: 50px 50px 50px 50px;
+        }
+    #botao_login{
+        cursor: pointer;
+        margin-top: 10px;
+        margin-left: 60%;
+        position: absolute;
+        display: inline-block;
+        background-color: #f5ba00;
+        color: whitesmoke;
+        padding: 15px;
+        border-radius: 50px;
+        width: 150px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+#botao_cadastre{
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 75%;
+    position: absolute;
+    display: inline-block;
+    background-color: #ed2687;
+    color: whitesmoke;
+    padding: 15px;
+    border-radius: 50px;
+    width: 120px;
+    text-align: center;
+    box-sizing: border-box;
+}
+#div_banner{
+    text-align: center;
+}
+#banner{
+    margin-left: 10px
+}
+.info{
+    width: 100%;
+    height: 400px;
+/*     background-color: #525051; */
+    margin-top: 50px;
+}
+#informacoes{
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 45%;
+    height: 350px;
+    margin-top: 30px;
+    margin-left: 45px;
+/*     background-color: grey; */
+}
+    #nome_projeto{
+        font-weight: bold;
+        font-size: 20pt;
+        position: absolute;
+        width: 100%;
+        height: 70px;
+        margin-left: 15px;
+    }
+        #nome_projeto>span{
+            display: block;
+            font-size: 12pt;
+
+            margin-top: 5px;
+            color: rgba(0, 0, 0, 0.7)
+        }
+    #info_projeto{
+        position: relative;
+        width: 100%;
+        height: 90px;
+        margin-top: 80px;
+    }
+        #span_a{
+            font-weight: bolder;
+            margin-left: 15px;
+            margin-top: 5px;
+            position: absolute;
+            display: block;
+        }
+        #span_b{
+            font-weight: bolder;
+            margin-left: 15px;
+            margin-top:33px;
+            position: absolute;
+            display: block;
+        }
+        #span_c{
+            font-weight: bolder;
+            margin-left: 15px;
+            margin-top: 60px;
+            position: absolute;
+            display: block;
+        }
+
+    #sobre{
+        position: relative;
+        margin-top: 10px;
+        width: 100%;
+        height: 170px;
+    }
+        #sobre>span{
+            display: block;
+            text-align: justify;
+            position: absolute;
+
+            margin: 15px 15px 0 15px;
+        }
+#contato{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 20%;
+    height: 350px;
+    margin-top: 30px;
+    margin-left: 10px;
+    float: left;
+}
+    #botao_voluntariar{
+        cursor: pointer;
+        border: none;
+        outline: none;
+        background-color: #8ede50;
+        color: darkslategrey;
+        font-weight: bold;
+        padding: 15px;
+        border-radius: 50px;
+        width: 120px;    }
+    #botao_doar{
+        font-weight: bold;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        margin-top: 15px;
+        background-color: #ed2687;
+        color: whitesmoke;
+        padding: 15px;
+        border-radius: 50px;
+        width: 120px;
+    }
+    .contacticon{
+        cursor: pointer;
+        margin-top: 10px;
+        display: block;
+        padding: 10px;
+        border-radius: 50px;
+    }
+        .contacticon>span{
+            padding: 5px;
+            font-weight: bolder;
+        }
+#mapa{
+    position: absolute;
+    display: inline-block;
+    background-color: black;
+    width: 350px;
+    height: 350px;
+    margin-top: 30px;
+    margin-left: 10px;
+    float: left;
+}
