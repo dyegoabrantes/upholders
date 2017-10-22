@@ -1,96 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <title>Projeto Vira-lata</title>
-    <LINK rel="stylesheet" type="text/css" href="estilo.css">
+	<meta charset="utf-8">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Upholders</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="homepage.css">
 </head>
 <body>
-    <header>
-        <img id="marca" src="marca.png" width="200px">
+	<header id="header">
+		<div id="header_content">
+			<img id="marca" src="marca.png" width="200px">
         <ul id="header_lista">
-            <li id="botao_explore">
-                <div>
-                    Explore
-                </div>
+            <li class="li" id="botao_explore">
+            	<div id="textobotao1">
+                	Explore
+            	</div>
+            	<div>
+					<ul class="dropdown-content" id="ddct">
+						<lh><h2>Categorias de projetos</h2></lh>
+						<li>Socioambientais</li>
+						<li>Animais</li>
+						<li>Políticos</li>
+						<li>Educacionais</li>
+						<li>Arte e Tecnologia</li>
+						<li>Música</li>
+						<li>Esporte</li>
+						<li>Literatura</li>
+					</ul>		
+				</div>
             </li>
-            <li  id="barra_pesquisa">
-                <input id="texto_pesquisa" type="text" placeholder="Encontre Projetos Para se voluntariar!" required>
+            <li  class="li"  id="barra_pesquisa">
+                <input id="texto_pesquisa" type="text" placeholder="Encontre projetos e ongs, digite o termo da busca" required>
                 <button id="botao_pesquisa" type="submit"><img src="iconlupa.svg" width="30px;"></button>
             </li>
-            <li  id="botao_login">
-                <div>
-                    Entre
-                </div>
+            <li  class="li"  id="botao_login">
+            	<div id="textobotao2">
+                	Entre
+            	</div>
             </li>
-            <li id="botao_cadastre">
-                <div>
-                    Cadastre-se
-                </div>
+            <li  class="li" id="botao_cadastre">
+            	<div id="textobotao3">
+                	Cadastre-se
+            	</div>
             </li>
         </ul>
+		</div>
     </header>
-    <div id="div_banner"><img id="banner" src="banner.jpg" width="900px"></div>
-    <div class="info">
-        <div id="informacoes">
-        	<div id="nome_projeto">Projeto Vira-Lata<span>Desde 2010</span></div>
-        	<div id="info_projeto">
-             <span id="span_a">voluntários cadastrados: 45</span>
-             <span id="span_b">dinheiro arrecadado - 15 dias: R$65,57</span>
-             <span id="span_c">projeto: em execução</span>
-            </div>
-        	<div id="sobre">
-             <span>
-                 O Projeto Vira-Lata iniciou em junho de 2010 e tem como missão expandir o bem-estar animal na cidade de Joinville. Para tanto o Projeto foca na recuperação de animais de rua maltratados ou em sofrimento, e na ampla divulgação de casos de sucesso para toda a sociedade a fim de que sirvam como exemplos a serem seguidos.
-             </span>   
-            </div>
-        </div>
-        <div id="contato">
-            <button id="botao_voluntariar">Seja um voluntário</button><br>
-            <button id="botao_doar">Efetue uma doação</button><br>
-            <div class="contacticon">
-                <span>contatos</span><br>
-                <img src="contacticon-01.svg" width="40px">
-            </div>
-            <div class="contacticon">
-                <span>bate-papo</span><br>
-                <img src="contacticon-02.svg" width="40px">
-            </div>
-        </div>
-        <div id="mapa">
-        	<iframe width="350px" height="350px" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJQS0h7huevgcRN-WNAgdHW3A&key=AIzaSyD1rxZHBj-0QJ41hxfcaI2rnqqe9QmfyNE" allowfullscreen></iframe>
-        </div>
-    </div>
-    <div class="conteudo">
-        <div id="img_content">
-            <img src="cao1.jpg" width="400px">
-        </div>
-        <div id="txt_content">
-            <div id="data">
-                <b>Domingo<br>
-                15/10/2017<br>
-                18:49</b>
-            </div>
-            <span>Os animais assistidos pelo Projeto Vira-Lata são acolhidos em lares temporários com alimentação adequada, recebem cuidados veterinários para tratar de suas enfermidades, são esterilizados, imunizados e vermifugados.<br><br>Após este processo são encaminhados para adoção onde se procura a família ideal para cada animal. Efetuada a adoção, realiza-se a identificação do animal com coleira e plaquinha e acompanha-se a adoção através de visitas de monitoramento.<br><br>
-            Para realização de suas atividades o Projeto conta com Voluntários dedicados, Patrocinadores atenciosos e Parceiros com consciência ambiental e que praticam a responsabilidade social.</span>
-        </div>
-    </div>
-    <div class="conteudo">
-        <div id="txt_content2">
-            <div id="data">
-                <b>Sábado<br>
-                14/10/2017<br>
-                11:11</b>
-            </div>
-            <span>Sem palavras para esse vídeo</span>
-        </div>
-        <div id="vid_content">
-            <iframe src="https://player.vimeo.com/video/59594168" width="480" height="320" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        </div>
-    </div>
-    <footer>
-        
-    </footer>
+    <div id="content">
+<!--     	<h2> Projetos próximos a você </h2> -->
+		<div class="slider">
+			<img class="active" src="banner_1.svg" width="1310px" alt="">
+			<img src="banner_2.png" alt="" width="1310px">
+			<img src="banner.jpg" alt="" width="880px">
+			<div class="arrow" id="right"></div>
+			<div class="arrow" id="left"></div>
+			<div class="overlay">
+				<div class="dot active"></div>
+				<div class="dot"></div>
+				<div class="dot"></div>
+			</div>
+			<!-- <div class="arrow right"></div> -->
+		</div>
+	</div>
 </body>
+<script type="text/javascript">
+	let botaoLeft = document.querySelector(".arrow#left");
+    let botaoRight = document.querySelector(".arrow#right");
+    let imagens = document.querySelectorAll(".slider img");
+    let dots = document.querySelectorAll(".slider .overlay .dot");
+    let current = 0;
+
+    function nextSlide(){
+        imagens[current].classList.remove("active");
+        dots[current].classList.remove("active");
+        current ++;            
+        if(current > imagens.length-1){
+            current=0;
+        }
+        imagens[current].classList.add("active");
+        dots[current].classList.add("active");
+    }
+    function previousSlide(){
+        imagens[current].classList.remove("active");
+        dots[current].classList.remove("active");
+        current --;
+        if(current < 0){
+            current = imagens.length -1;
+        }
+        imagens[current].classList.add("active");
+        dots[current].classList.add("active");
+    }
+    function goToSlide(i){
+        imagens[current].classList.remove("active");
+        dots[current].classList.remove("active");
+        current = i;
+        imagens[current].classList.add("active");
+        dots[current].classList.add("active");
+    }
+    botaoRight.addEventListener("click", nextSlide);
+    botaoLeft.addEventListener("click", previousSlide);
+    for(let j=0; j<dots.length; j++){
+        dots[j].addEventListener("click", function(){goToSlide(j)});
+    }
+    setInterval(nextSlide,5000);
+
+    window.onscroll = function() {retraiHeader()};
+
+	function retraiHeader() {
+    	if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    	    document.getElementById("header").className = "retraido";
+    	    document.getElementById("botao_explore").style.fontSize= "10pt";
+    	    document.getElementById("botao_login").style.fontSize= "10pt";
+    	    document.getElementById("botao_cadastre").style.fontSize= "10pt";
+    	    document.getElementById("texto_pesquisa").style.height= "35px";
+    	    document.getElementById("botao_pesquisa").style.height= "35px";
+    	    document.getElementById("botao_explore").style.height= "35px";
+    	    document.getElementById("botao_login").style.height= "35px";
+    	    document.getElementById("botao_cadastre").style.height= "35px";
+    	    document.getElementById("textobotao1").style.marginTop= "8px";
+    	    document.getElementById("textobotao2").style.marginTop= "8px";
+    	    document.getElementById("textobotao3").style.marginTop= "8px";
+    	    document.getElementById("ddct").style.marginTop= "9px";
+    	    // document.getElementById("header_content").className = "header_content_retraido";
+    	} 
+    	else {
+        	document.getElementById("header").className = "";
+        	document.getElementById("botao_explore").style.fontSize= "17pt";
+        	document.getElementById("botao_login").style.fontSize= "17pt";
+   	    	document.getElementById("botao_cadastre").style.fontSize= "17pt";
+    		document.getElementById("texto_pesquisa").style.height= "60px";
+    		document.getElementById("botao_pesquisa").style.height= "60px";
+    		document.getElementById("botao_explore").style.height= "60px";
+    	    document.getElementById("botao_login").style.height= "60px";
+    	    document.getElementById("botao_cadastre").style.height= "60px";
+    	    document.getElementById("textobotao1").style.marginTop= "15px";
+    	    document.getElementById("textobotao2").style.marginTop= "15px";
+    	    document.getElementById("textobotao3").style.marginTop= "15px";
+    	     document.getElementById("ddct").style.marginTop= "14px";
+   	    	// document.getElementById("header_content").className = "";
+    	}
+	}
+</script>
 </html>
