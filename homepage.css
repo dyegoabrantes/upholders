@@ -2,46 +2,35 @@
 	margin: 0;
 	padding: 0;
 	font-family: 'Open Sans', sans-serif;
-
 }
 
 header{
-	width: 100%;
-    height: 65px;
+	width: 96vw;
+	height: 13vh;
+	padding-top: 2vh;
+	padding-left: 2vh;
+	display: inline-block;
+	margin-left: 1vw;
+	margin-right: 1vw;
 	position: fixed;
 	top: 0;
-    padding: 15px 15px 15px 15px;
     background-color: white;
-    box-shadow: 0px 0px 48px 0px rgba(0,0,0,0.75);
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 0px 26px 4px rgba(0,0,0,0.25);
     z-index: 100;
     transition: height .3s;
 }
 .retraido{
-	width: 100%;
-    height: 40px;
-	position: fixed;
-	top: 0;
-    padding: 5px 5px 5px 5px;
-    background-color: white;
-    box-shadow: 10px 10px 37px -10px rgba(0,0,0,0.5);
-    z-index: 100;
-
+	height: 8vh
 }
 	.retraido>div>img{
-		width: 130px;
-		margin-right: 50px;
-		margin-left: 25px;
+		width: 100px;
 	}
 #header_content{
 	height: 60px;
 	position: relative;
 	transition: height .3s;
 }
-	/* #header_content_retraido{
-	height: 40px;
-	position: relative;
-	background-color: blue;
-} */
 #marca{
 	cursor: pointer;
 	transition: width .3s;
@@ -69,31 +58,29 @@ header{
 
 #barra_pesquisa{
 	margin-left: 20px;
-	width: 45vw;
+	width: 44vw;
+	transition: width 0.5s;
 }
 #texto_pesquisa, #botao_pesquisa{
-	border-radius: 10px 10px 10px  10px ;
 	position: relative;
 	float: left;
 	height: 60px;
 	border: none;
 	outline: none;
 	background-color: #dcdcdc;
-	box-shadow: 10px 10px 37px -10px rgba(0,0,0,0.5);
-	transition: height .3s;
+	transition: height .5s;
+	transition: width 0.5s;
 }
 #texto_pesquisa{
-	width: 39vw;
+	width: 37vw;
 	text-align: left;
 	padding-left: 10px;
+	border-radius: 10px 00px 00px  10px ;
 }
-/* #texto_pesquisa placeholder{
-	margin-left: 15px;
-	left: 15px;
-} */
 #botao_pesquisa{
+	padding-top: 2px;
+	border-radius: 0px 10px 10px  0px ;
 	width: 4vw;
-	margin-left: 5px;
 	cursor: pointer;
 }
 #botao_explore{
@@ -101,7 +88,6 @@ header{
 	width: 10vw;
 	background-color: #8ede50;
 	margin-left: 20px;
-	box-shadow: 10px 10px 37px -10px rgba(0,0,0,0.50);
 	transition: height .3s;
 }
 	.dropdown-content{
@@ -117,11 +103,11 @@ header{
     	z-index: 10;
     	list-style: none;
     	background-color: #8ede50;
-    	border-radius: 0px 10px 10px  10px ;
-    	box-shadow: 10px 10px 37px -10px rgba(0,0,0,0.50);   	
+    	border-radius: 0px 10px 10px  10px ;   	
 	}
 		#botao_explore:hover{
 			border-radius: 10px 10px 0px  0px ;
+			z-index: 99;
 		}
 		#botao_explore:hover .dropdown-content{
 			visibility: visible;
@@ -134,7 +120,6 @@ header{
 			text-decoration: none;
 			color: black;
 			border-radius: 10px 10px 10px  10px ;
-			/* background-color: #F1F1F1; */
 			cursor: pointer;
 		}
 		.dropdown-content> li:hover{
@@ -144,8 +129,6 @@ header{
 	cursor: pointer;
 	width: 10vw;
 	background-color: #ed2687;
-	margin-left: 10px;
-	box-shadow: 10px 10px 37px -10px rgba(0,0,0,0.5);
 	transition: height .3s;
 }
 #botao_cadastre{
@@ -154,30 +137,25 @@ header{
 	background-color: #f5ba00;
 	margin-left: 20px;
 	white-space: nowrap;
-	box-shadow: 10px 10px 37px -10px rgba(0,0,0,0.5);
 	transition: height .3s;
 }
 #content{
 	width: 100%;
-	height: 2000px;
-	background-color: #dcdcdc;
+	height: 300vh;
 	margin-top: 90px;
 }
-/* #content h2{
-	color: #f6e19b;
-	margin-left: 3vw;
-	padding-top: 3vh;
-} */
 .slider{
 	background-color: white;
 	z-index: 11;
-	box-shadow: 0px 0px 48px 0px rgba(0,0,0,0.75);
-	margin-top: 100px;
-	width: 100%;
-	height: 80vh;
+	box-shadow: 0px 0px 26px 4px rgba(0,0,0,0.25);
+	margin-top: 115px;
+	width: 97vw;
+	margin-left: 1vw;
+	height: 500px;
 	position: relative;
 	text-align:center;
 	overflow: hidden;
+	border-radius: 10px;
 }
 .slider img{
 	display: none;	
@@ -238,3 +216,91 @@ header{
 	.slider .overlay .dot.active{
 		background-color: #8ede50;
 	}
+.categorias{
+	position: relative;
+	background-color: white;
+	z-index: 11;
+	box-shadow: 0px 0px 48px 0px rgba(0,0,0,0.25);
+	border-radius: 10px;
+	width: 97vw;
+	margin-left: 1vw;
+	height: 400px;
+	margin-top: 20px;
+	position: relative;
+	text-align:center;
+}
+	.categorias>h1{
+		float: left;
+		margin: 40px 0 40px 40px;
+		color: #272525;
+	}
+	.categorias>h2{
+		float: left;
+		margin: 0px 0 40px 40px;
+		color: #272525;
+	}
+	#linha_expande{
+		left: 3vw;
+		top: 100px;
+		height: .5vh;
+		width: 10vw;
+		transition: width 1s;
+		background-color: #f5ba00;
+		position: absolute;
+	}
+	.table1{
+		position: absolute;
+		left: 8%;
+		transform: translate(-8%,0);
+		width: 60vw;
+		margin-top: 200px;
+	}
+		.table1 td{
+			cursor: pointer;
+			color: #272525;
+			padding: 10px;
+			width: 20vw;
+			height: 50px;
+			font-size: 18pt;
+			font-weight: bold;
+		}
+		.rosa{
+			background-color: #e8a3cc;
+			transition: background-color, color .3s;
+		}
+			.rosa:hover{
+				background-color: #dd4e9c;
+				color: white;
+			}
+		.laranja{
+			background-color: #f6e19b;
+			transition: background-color, color .3s;
+		}
+			.laranja:hover{
+				background-color: #f0c644;
+				color: white;
+			}
+	#cards_projetos{
+		position: relative;
+		background-color: white;
+		z-index: 11;
+		box-shadow: 0px 0px 48px 0px rgba(0,0,0,0.25);
+		border-radius: 10px;
+		width: 97vw;
+		margin-left: 1vw;
+		height: 400px;
+		margin-top: 20px;
+		position: relative;
+		text-align:center;
+	}
+		.cards{
+			margin-right: 20px;
+			margin-left: 20px;
+			margin-top: 40px;
+			padding: 20px;
+			width: 15vw;
+			height: 300px;
+			display: inline-block;
+			border-radius: 10px;
+			box-shadow: 0px 0px 48px 0px rgba(0,0,0,0.25);
+		}

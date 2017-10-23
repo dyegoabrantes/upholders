@@ -63,6 +63,41 @@
 			</div>
 			<!-- <div class="arrow right"></div> -->
 		</div>
+        <div class="categorias">
+            <h1>Escolha uma categoria de projeto</h1>
+            <h2>cadastre-se e você pode fazer parte de diversos projetos sociais mundo afora</h2>
+                <div id="linha_expande">
+                    
+                </div>
+            <table class="table1">
+                <tr>
+                    <td class="laranja">Socioambientais</th>
+                    <td class="rosa">Animais</th>
+                    <td class="laranja">Políticos</th>
+                    <td class="rosa">Educacionais</th>
+                </tr>
+                <tr>
+                    <td class="rosa">Arte e Tecnologia</td>
+                    <td class="laranja">Música</td>
+                    <td class="rosa">Esporte</td>
+                    <td class="laranja">Literatura</td>
+                </tr>
+                </table>
+        </div>
+        <div id="cards_projetos">
+            <div class="cards">
+                
+            </div>
+            <div class="cards">
+                
+            </div>
+            <div class="cards">
+                
+            </div>
+            <div class="cards">
+                
+            </div>
+        </div>
 	</div>
 </body>
 <script type="text/javascript">
@@ -106,7 +141,7 @@
     }
     setInterval(nextSlide,5000);
 
-    window.onscroll = function() {retraiHeader()};
+    window.onscroll = function() {retraiHeader(), cresce_linha()};
 
 	function retraiHeader() {
     	if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -115,6 +150,8 @@
     	    document.getElementById("botao_login").style.fontSize= "10pt";
     	    document.getElementById("botao_cadastre").style.fontSize= "10pt";
     	    document.getElementById("texto_pesquisa").style.height= "35px";
+            document.getElementById("texto_pesquisa").style.width= "43vw";
+            document.getElementById("barra_pesquisa").style.width= "50vw";
     	    document.getElementById("botao_pesquisa").style.height= "35px";
     	    document.getElementById("botao_explore").style.height= "35px";
     	    document.getElementById("botao_login").style.height= "35px";
@@ -123,7 +160,6 @@
     	    document.getElementById("textobotao2").style.marginTop= "8px";
     	    document.getElementById("textobotao3").style.marginTop= "8px";
     	    document.getElementById("ddct").style.marginTop= "9px";
-    	    // document.getElementById("header_content").className = "header_content_retraido";
     	} 
     	else {
         	document.getElementById("header").className = "";
@@ -131,6 +167,8 @@
         	document.getElementById("botao_login").style.fontSize= "17pt";
    	    	document.getElementById("botao_cadastre").style.fontSize= "17pt";
     		document.getElementById("texto_pesquisa").style.height= "60px";
+            document.getElementById("texto_pesquisa").style.width= "37vw";
+            document.getElementById("barra_pesquisa").style.width= "44vw";
     		document.getElementById("botao_pesquisa").style.height= "60px";
     		document.getElementById("botao_explore").style.height= "60px";
     	    document.getElementById("botao_login").style.height= "60px";
@@ -138,9 +176,15 @@
     	    document.getElementById("textobotao1").style.marginTop= "15px";
     	    document.getElementById("textobotao2").style.marginTop= "15px";
     	    document.getElementById("textobotao3").style.marginTop= "15px";
-    	     document.getElementById("ddct").style.marginTop= "14px";
-   	    	// document.getElementById("header_content").className = "";
+            document.getElementById("ddct").style.marginTop= "14px";
     	}
 	}
+    function cresce_linha() {
+        if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+        document.getElementById("linha_expande").style.width = "63vw";
+        } else {
+        document.getElementById("linha_expande").style.width = "10vw";
+    }
+}
 </script>
 </html>
